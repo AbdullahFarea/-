@@ -10,8 +10,11 @@ for(let i = 0; i < counterDisplay.length; i++) {
 
     increase[i].addEventListener('click', () => {
         let num = counterDisplay[i].textContent
-        if(num != 0) counterDisplay[i].textContent =  parseInt(num) - 1
-
+        if(num != 0) {
+            counterDisplay[i].textContent =  parseInt(num) - 1
+            const click = new Audio('./sounds/click.mp3')
+            click.play()
+        }
     })
 
     reset[i].addEventListener('click', () => {
