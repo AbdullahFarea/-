@@ -6,75 +6,39 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>اذكار بعد الصلاة</title>
         <link rel="stylesheet" href="./css/main.css" />
+        <link rel="stylesheet" href="./css/all.min.css" />
+        <link rel="stylesheet" href="./css/fontawesome.min.css" />
     </head>
     <body>
         <div class="container">
+            <div class="sound">
+                <i id="soundIcon" class="fas fa-volume-up"></i>
+            </div>
             <h1 class="adhkar">
                 سُـبْحانَ اللهِ، والحَمْـدُ لله ، واللهُ أكْـبَر.
             </h1>
             <div class="counter-container">
-                <h1 class="counter" data-start="33">33</h1>
+                <h1 class="counter" data-start="33">?</h1>
                 <button class="increase"></button>
-                <span class="reset"
-                    ><svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                        aria-hidden="true"
-                        role="img"
-                        width="1em"
-                        height="1em"
-                        preserveAspectRatio="xMidYMid meet"
-                        viewBox="0 0 21 21"
-                    >
-                        <g
-                            fill="none"
-                            fill-rule="evenodd"
-                            stroke="currentColor"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                        >
-                            <path d="M3.578 6.487A8 8 0 1 1 2.5 10.5" />
-                            <path d="M7.5 6.5h-4v-4" />
-                        </g></svg
-                ></span>
+                <div class="reset"><i class="fas fa-redo-alt"></i></div>
             </div>
             <h1 class="adhkar">
                 لا إلهَ إلاّ اللّهُ وَحْـدَهُ لا شريكَ لهُ، لهُ الملكُ ولهُ
                 الحَمْد، وهُوَ على كُلّ شَيءٍ قَـدير.
             </h1>
             <div class="counter-container">
-                <h1 class="counter" data-start="1">1</h1>
+                <h1 class="counter" data-start="1">?</h1>
                 <button class="increase"></button>
                 <div class="reset">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                        aria-hidden="true"
-                        role="img"
-                        width="1em"
-                        height="1em"
-                        preserveAspectRatio="xMidYMid meet"
-                        viewBox="0 0 21 21"
-                    >
-                        <g
-                            fill="none"
-                            fill-rule="evenodd"
-                            stroke="currentColor"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                        >
-                            <path d="M3.578 6.487A8 8 0 1 1 2.5 10.5" />
-                            <path d="M7.5 6.5h-4v-4" />
-                        </g>
-                    </svg>
+                    <i class="fas fa-redo-alt"></i>
                 </div>
             </div>
-        </div>
-        <div class="alert-container"></div>
-        <div class="alert">
-            <h1>هل أنت متأكد ؟</h1>
-            <button class="yes">نعم</button>
-            <button class="no">لا</button>
+            <div class="alert-container"></div>
+            <div class="alert">
+                <h1>هل أنت متأكد ؟</h1>
+                <button class="yes">نعم</button>
+                <button class="no">لا</button>
+            </div>
         </div>
         <script src="js/javascript.js"></script>
     </body>

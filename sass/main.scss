@@ -42,90 +42,98 @@ body {
         width: 100%;
         text-align: center;
         padding-inline: 0.5rem;
-    }
-    .counter-container {
-        width: 12rem;
-        min-height: 6rem;
-        background: $danger;
-        display: grid;
-        border-radius: 1rem;
-        justify-items: center;
-        align-items: center;
-        user-select: none;
-
-        .increase {
-            border: none;
-            width: 100%;
-            font-size: 2.5rem;
-            font-weight: bold;
-            background: $teal;
-            min-height: 4rem;
-            color: $white;
+        .sound {
+            padding: 0.5rem;
+            border-radius: 1rem;
+            font-size: 1.5rem;
+            border: 3px solid $gray;
             cursor: pointer;
-            position: relative;
-            &::before {
-                content: "";
-                position: absolute;
-                width: 20%;
-                border-radius: 1rem;
-                height: 4.8px;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                background: white;
+        }
+        .counter-container {
+            width: 12rem;
+            min-height: 6rem;
+            background: $danger;
+            display: grid;
+            border-radius: 1rem;
+            justify-items: center;
+            align-items: center;
+            user-select: none;
+
+            .increase {
+                border: none;
+                width: 100%;
+                font-size: 2.5rem;
+                font-weight: bold;
+                background: $teal;
+                min-height: 4rem;
+                color: $white;
+                cursor: pointer;
+                position: relative;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 20%;
+                    border-radius: 1rem;
+                    height: 4.8px;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    background: white;
+                }
+            }
+            .reset {
+                font-size: 1.5rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 2rem;
+                cursor: pointer;
+                width: 100%;
+                transform: scaleX(-1);
             }
         }
-        .reset {
-            font-size: 1.5rem;
-            display: flex;
+        .alert-container {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            background: rgba(108, 117, 125, 0.5);
+            top: 0;
+            left: 0;
+            display: none;
+        }
+        .alert {
+            width: 95%;
+            min-height: 15rem;
+            background: $dark;
+            color: white;
+            padding: 2rem;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 0.5rem;
+            text-align: center;
+            display: none;
             justify-content: center;
             align-items: center;
-            height: 2rem;
-            cursor: pointer;
-            width: 100%;
-        }
-    }
-    .alert-container {
-        width: 100%;
-        height: 100%;
-        position: fixed;
-        background: rgba(108, 117, 125, 0.5);
-        top: 0;
-        left: 0;
-        display: none;
-    }
-    .alert {
-        width: 95%;
-        min-height: 15rem;
-        background: $dark;
-        color: white;
-        padding: 2rem;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        border-radius: 0.5rem;
-        text-align: center;
-        display: none;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        gap: 0.5rem;
-        max-width: 20rem;
+            flex-direction: column;
+            gap: 0.5rem;
+            max-width: 20rem;
 
-        .yes,
-        .no {
-            border: none;
-            width: 90%;
-            min-height: 3rem;
-            border-radius: 0.2rem;
-            font-size: 1.5rem;
-            background: $green;
-            color: white;
-            cursor: pointer;
-        }
-        .no {
-            background: $danger;
+            .yes,
+            .no {
+                border: none;
+                width: 90%;
+                min-height: 3rem;
+                border-radius: 0.2rem;
+                font-size: 1.5rem;
+                background: $green;
+                color: white;
+                cursor: pointer;
+            }
+            .no {
+                background: $danger;
+            }
         }
     }
 }
