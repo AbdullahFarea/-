@@ -19,9 +19,7 @@ $warning: #ffc107;
 $danger: #dc3545;
 $light: #f8f9fa;
 $dark: #212529;
-*,
-*::after,
-*::before {
+* {
     font-family: Arial, Helvetica;
     padding: 0;
     margin: 0;
